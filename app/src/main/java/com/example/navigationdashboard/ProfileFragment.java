@@ -9,8 +9,8 @@ import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
-import com.google.android.material.tabs.TabLayout;
 
 
 /**
@@ -18,7 +18,7 @@ import com.google.android.material.tabs.TabLayout;
  */
 public class ProfileFragment extends Fragment {
 
-
+    private ImageView dashboardImageView;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -30,10 +30,17 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
+        init(view);
+
+
 
 
 
         return view;
+    }
+
+    private void init(View view) {
+        dashboardImageView=view.findViewById(R.id.dashboardImaveView);
     }
 
 }
