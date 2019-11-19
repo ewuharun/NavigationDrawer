@@ -23,16 +23,6 @@
 
 
             </pl.droidsonroids.gif.GifImageView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="Dashboared"
-                android:layout_gravity="center"
-                android:layout_marginBottom="120dp"
-                android:textColor="@color/colorWhite"
-                android:textSize="35sp"
-                android:layout_height="wrap_content">
-
-            </TextView>
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -64,6 +54,7 @@
                                         android:layout_width="match_parent"
 
                                         android:orientation="vertical"
+                                        android:id="@+id/houseLayout"
                                         android:layout_gravity="center"
                                         android:layout_height="match_parent">
                                         <ImageView
@@ -73,14 +64,16 @@
                                             android:src="@drawable/house">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
-                                            android:textSize="25sp"
-                                            android:textColor="#000000"
+                                            android:layout_height="0dp"
                                             android:layout_gravity="center"
                                             android:layout_weight=".5"
-                                            android:layout_height="0dp"
-                                            android:text="House">
+                                            android:text="House"
+                                            app:fontFamily="@font/architects_daughter"
+                                            android:textColor="#000000"
+                                            android:textSize="25sp">
 
                                         </TextView>
 
@@ -96,7 +89,7 @@
                                     android:layout_height="140dp">
                                     <LinearLayout
                                         android:layout_width="match_parent"
-
+                                        android:id="@+id/flatLayout"
                                         android:orientation="vertical"
                                         android:layout_gravity="center"
                                         android:layout_height="match_parent">
@@ -107,14 +100,16 @@
                                             android:src="@drawable/flat">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
-                                            android:textSize="25sp"
-                                            android:textColor="#000000"
+                                            android:layout_height="0dp"
                                             android:layout_gravity="center"
                                             android:layout_weight=".5"
-                                            android:layout_height="0dp"
-                                            android:text="Flat">
+                                            android:text="Flat"
+                                            android:textColor="#000000"
+                                            android:textSize="25sp"
+                                            app:fontFamily="@font/architects_daughter">
 
                                         </TextView>
 
@@ -148,7 +143,7 @@
                                     android:layout_height="140dp">
                                     <LinearLayout
                                         android:layout_width="match_parent"
-
+                                        android:id="@+id/renterLayout"
                                         android:orientation="vertical"
                                         android:layout_gravity="center"
                                         android:layout_height="match_parent">
@@ -159,14 +154,17 @@
                                             android:src="@drawable/people">
 
                                         </ImageView>
+
                                         <TextView
                                             android:layout_width="wrap_content"
-                                            android:textSize="25sp"
-                                            android:textColor="#000000"
+                                            android:layout_height="0dp"
                                             android:layout_gravity="center"
                                             android:layout_weight=".5"
-                                            android:layout_height="0dp"
-                                            android:text="Tanent">
+                                            android:includeFontPadding="false"
+                                            android:text="Tanent"
+                                            android:textColor="#000000"
+                                            android:textSize="25sp"
+                                            app:fontFamily="@font/architects_daughter">
 
                                         </TextView>
 
@@ -182,7 +180,7 @@
                                     android:layout_height="140dp">
                                     <LinearLayout
                                         android:layout_width="match_parent"
-
+                                        android:id="@+id/complainLayout"
                                         android:orientation="vertical"
                                         android:layout_gravity="center"
                                         android:layout_height="match_parent">
@@ -200,6 +198,7 @@
                                             android:layout_gravity="center"
                                             android:layout_weight=".5"
                                             android:layout_height="0dp"
+                                            app:fontFamily="@font/architects_daughter"
                                             android:text="Complain">
 
                                         </TextView>
@@ -234,7 +233,7 @@
                                     android:layout_height="140dp">
                                     <LinearLayout
                                         android:layout_width="match_parent"
-
+                                        android:id="@+id/paymentDueLayout"
                                         android:orientation="vertical"
                                         android:layout_gravity="center"
                                         android:layout_height="match_parent">
@@ -251,6 +250,7 @@
                                             android:textColor="#000000"
                                             android:layout_gravity="center"
                                             android:layout_weight=".5"
+                                            app:fontFamily="@font/architects_daughter"
                                             android:layout_height="0dp"
                                             android:text="Payment Due">
 
@@ -268,8 +268,9 @@
                                     android:layout_height="140dp">
                                     <LinearLayout
                                         android:layout_width="match_parent"
-
+                                        android:id="@+id/paymentClearLayout"
                                         android:orientation="vertical"
+
                                         android:layout_gravity="center"
                                         android:layout_height="match_parent">
                                         <ImageView
@@ -286,6 +287,7 @@
                                             android:layout_gravity="center"
                                             android:layout_weight=".5"
                                             android:layout_height="0dp"
+                                            app:fontFamily="@font/architects_daughter"
                                             android:text="Payment Done">
 
                                         </TextView>
@@ -320,7 +322,7 @@
                                     android:layout_height="140dp">
                                     <LinearLayout
                                         android:layout_width="match_parent"
-
+                                        android:id="@+id/fileLayout"
                                         android:orientation="vertical"
                                         android:layout_gravity="center"
                                         android:layout_height="match_parent">
@@ -338,6 +340,7 @@
                                             android:layout_gravity="center"
                                             android:layout_weight=".5"
                                             android:layout_height="0dp"
+                                            app:fontFamily="@font/architects_daughter"
                                             android:text="File">
 
                                         </TextView>
@@ -356,6 +359,7 @@
                                         android:layout_width="match_parent"
 
                                         android:orientation="vertical"
+                                        android:id="@+id/emergencyLayout"
                                         android:layout_gravity="center"
                                         android:layout_height="match_parent">
                                         <ImageView
@@ -371,6 +375,7 @@
                                             android:textColor="#000000"
                                             android:layout_gravity="center"
                                             android:layout_weight=".5"
+                                            app:fontFamily="@font/architects_daughter"
                                             android:layout_height="0dp"
                                             android:text="Emergency">
 
